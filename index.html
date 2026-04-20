@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhopal Roti Services — Fresh Rotis, Delivered Daily</title>
+  <meta name="description" content="Premium hand-rolled rotis delivered fresh to your doorstep. Subscribe monthly or order single. Bhopal's most loved roti delivery." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🫓</span>
+        <span class="logo-text">Bhopal<em>Roti</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#subscription">Subscribe</a></li>
+        <li><a href="#single-order">Order Now</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <a href="#single-order" class="nav-cta">Order Today</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+      <li><a href="#subscription" class="mobile-link">Subscribe</a></li>
+      <li><a href="#single-order" class="mobile-link">Order Now</a></li>
+      <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+    </ul>
+    <a href="#single-order" class="mobile-cta mobile-link">Order Today</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grain"></div>
+    <canvas id="rotiCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Delivering Since 2018 · 50,000+ Happy Families
+      </div>
+      <h1 class="hero-title">
+        Ghar Jaisi<br />
+        <em>Rotis,</em><br />
+        <span class="hero-subtitle-word">Delivered Fresh</span>
+      </h1>
+      <p class="hero-desc">
+        Hand-rolled, tawa-fresh, delivered warm to your door every single day.<br />
+        No preservatives. No compromise. Just pure love in every bite.
+      </p>
+      <div class="hero-actions">
+        <a href="#subscription" class="btn btn-primary">
+          <span>Start Subscription</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#single-order" class="btn btn-ghost">Order Single Batch</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <strong>4.9★</strong>
+          <span>Rating</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>30 min</strong>
+          <span>Delivery</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <strong>100%</strong>
+          <span>Fresh</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🫓 Hand-Rolled Rotis</span>
+      <span>✦ No Maida, Pure Atta</span>
+      <span>🔥 Tawa Fresh Daily</span>
+      <span>✦ No Preservatives</span>
+      <span>🛵 30-Min Delivery</span>
+      <span>✦ Cancel Anytime</span>
+      <span>🫓 Hand-Rolled Rotis</span>
+      <span>✦ No Maida, Pure Atta</span>
+      <span>🔥 Tawa Fresh Daily</span>
+      <span>✦ No Preservatives</span>
+      <span>🛵 30-Min Delivery</span>
+      <span>✦ Cancel Anytime</span>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">Fresh Rotis in<br /><em>3 Easy Steps</em></h2>
+      <div class="steps-grid">
+        <div class="step-card" data-step="01">
+          <div class="step-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <path d="M20 32h24M32 20v24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Choose Your Plan</h3>
+          <p>Pick a subscription or a single order. Customize roti count, meal time, and delivery window.</p>
+        </div>
+        <div class="step-card" data-step="02">
+          <div class="step-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="12" y="18" width="40" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 28h24M20 36h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>We Roll & Roast</h3>
+          <p>Our skilled rotiwali's hand-roll and tawa-roast your rotis fresh, right before delivery time.</p>
+        </div>
+        <div class="step-card" data-step="03">
+          <div class="step-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M32 12c-5 8-16 12-16 22a16 16 0 0032 0c0-10-11-14-16-22z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M32 44v-8M28 38l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hot At Your Door</h3>
+          <p>Delivered in insulated packaging, still warm, ready to eat. No reheating needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION PLANS -->
+  <section class="subscription" id="subscription">
+    <div class="container">
+      <div class="section-label">Best Value</div>
+      <h2 class="section-title">Monthly<br /><em>Subscription Plans</em></h2>
+      <p class="section-desc">Save big with our flexible subscriptions. Pause or cancel anytime — no questions asked.</p>
+
+      <div class="toggle-wrapper">
+        <button class="toggle-btn active" data-meal="lunch">Lunch</button>
+        <button class="toggle-btn" data-meal="dinner">Dinner</button>
+        <button class="toggle-btn" data-meal="both">Both Meals</button>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- STARTER -->
+        <div class="plan-card" data-plan="starter">
+          <div class="plan-top">
+            <div class="plan-name">Starter</div>
+            <div class="plan-tag">For Singles</div>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-lunch="599" data-dinner="599" data-both="999">599</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="price-per-day">= ₹20/day · <del>₹35</del> Save 43%</div>
+          <ul class="plan-features">
+            <li><span class="feat-icon">✓</span> 5 Fresh Rotis Daily</li>
+            <li><span class="feat-icon">✓</span> Pure Wheat Atta</li>
+            <li><span class="feat-icon">✓</span> Ghee Finish (Optional)</li>
+            <li><span class="feat-icon">✓</span> 1 Delivery Slot</li>
+            <li><span class="feat-icon">✓</span> Pause Anytime</li>
+            <li class="feat-disabled"><span class="feat-icon">✗</span> Priority Delivery</li>
+            <li class="feat-disabled"><span class="feat-icon">✗</span> Free Sabzi on Weekends</li>
+          </ul>
+          <a href="#order-form" class="plan-btn">Get Started</a>
+        </div>
+
+        <!-- FAMILY — FEATURED -->
+        <div class="plan-card plan-featured" data-plan="family">
+          <div class="plan-badge">🔥 Most Popular</div>
+          <div class="plan-top">
+            <div class="plan-name">Family</div>
+            <div class="plan-tag">For 4–5 Members</div>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-lunch="1299" data-dinner="1299" data-both="2199">1299</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="price-per-day">= ₹43/day · <del>₹80</del> Save 46%</div>
+          <ul class="plan-features">
+            <li><span class="feat-icon">✓</span> 15 Fresh Rotis Daily</li>
+            <li><span class="feat-icon">✓</span> Pure Wheat Atta</li>
+            <li><span class="feat-icon">✓</span> Ghee Finish Included</li>
+            <li><span class="feat-icon">✓</span> 2 Delivery Slots</li>
+            <li><span class="feat-icon">✓</span> Pause Anytime</li>
+            <li><span class="feat-icon">✓</span> Priority Delivery</li>
+            <li><span class="feat-icon">✓</span> Free Sabzi on Weekends</li>
+          </ul>
+          <a href="#order-form" class="plan-btn plan-btn-featured">Subscribe Now</a>
+        </div>
+
+        <!-- JOINT FAMILY -->
+        <div class="plan-card" data-plan="joint">
+          <div class="plan-top">
+            <div class="plan-name">Joint Family</div>
+            <div class="plan-tag">For 8–10 Members</div>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-lunch="2299" data-dinner="2299" data-both="3999">2299</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="price-per-day">= ₹77/day · <del>₹150</del> Save 49%</div>
+          <ul class="plan-features">
+            <li><span class="feat-icon">✓</span> 30 Fresh Rotis Daily</li>
+            <li><span class="feat-icon">✓</span> Pure Wheat Atta</li>
+            <li><span class="feat-icon">✓</span> Ghee Finish Included</li>
+            <li><span class="feat-icon">✓</span> 3 Delivery Slots</li>
+            <li><span class="feat-icon">✓</span> Pause Anytime</li>
+            <li><span class="feat-icon">✓</span> Priority Delivery</li>
+            <li><span class="feat-icon">✓</span> Free Sabzi on Weekends</li>
+          </ul>
+          <a href="#order-form" class="plan-btn">Get Started</a>
+        </div>
+
+      </div>
+
+      <div class="plans-note">
+        All plans include free delivery · GST included · Pause up to 7 days/month
+      </div>
+    </div>
+  </section>
+
+  <!-- SINGLE ORDER -->
+  <section class="single-order" id="single-order">
+    <div class="container">
+      <div class="section-label">Quick Order</div>
+      <h2 class="section-title">Order a<br /><em>Single Batch</em></h2>
+      <p class="section-desc">No commitment needed. Order fresh rotis for today's meal right now.</p>
+
+      <div class="order-wrapper" id="order-form">
+        <div class="order-configurator">
+          <h3 class="config-title">Build Your Order</h3>
+
+          <div class="config-group">
+            <label>Roti Type</label>
+            <div class="option-pills">
+              <button class="pill active" data-type="plain">Plain Roti</button>
+              <button class="pill" data-type="ghee">Ghee Roti</button>
+              <button class="pill" data-type="missi">Missi Roti</button>
+              <button class="pill" data-type="multigrain">Multigrain</button>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <label>How Many Rotis?</label>
+            <div class="quantity-control">
+              <button class="qty-btn" id="qtyMinus" aria-label="Decrease">−</button>
+              <div class="qty-display">
+                <span id="qtyValue">6</span>
+                <small>rotis</small>
+              </div>
+              <button class="qty-btn" id="qtyPlus" aria-label="Increase">+</button>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <label>Delivery Time</label>
+            <div class="option-pills">
+              <button class="pill active" data-time="lunch">Lunch (12–2pm)</button>
+              <button class="pill" data-time="dinner">Dinner (7–9pm)</button>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <label>Add-ons</label>
+            <div class="addons-grid">
+              <label class="addon-item">
+                <input type="checkbox" class="addon-check" data-price="29" data-name="Extra Ghee" />
+                <span class="addon-box">
+                  <span class="addon-name">Extra Ghee</span>
+                  <span class="addon-price">+₹29</span>
+                </span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" class="addon-check" data-price="49" data-name="Dal Tadka" />
+                <span class="addon-box">
+                  <span class="addon-name">Dal Tadka</span>
+                  <span class="addon-price">+₹49</span>
+                </span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" class="addon-check" data-price="39" data-name="Pickle" />
+                <span class="addon-box">
+                  <span class="addon-name">Achar (Pickle)</span>
+                  <span class="addon-price">+₹39</span>
+                </span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" class="addon-check" data-price="59" data-name="Sabzi" />
+                <span class="addon-box">
+                  <span class="addon-name">Sabzi of Day</span>
+                  <span class="addon-price">+₹59</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <div class="summary-card">
+            <h3>Order Summary</h3>
+            <div class="summary-lines">
+              <div class="summary-line">
+                <span id="summaryType">Plain Roti</span>
+                <span id="summaryRotis">×6</span>
+              </div>
+              <div class="summary-addons" id="summaryAddons"></div>
+              <div class="summary-divider"></div>
+              <div class="summary-line summary-total">
+                <span>Total</span>
+                <span class="total-price" id="totalPrice">₹90</span>
+              </div>
+              <div class="summary-line summary-per">
+                <span></span>
+                <span class="per-roti" id="perRoti">₹15/roti</span>
+              </div>
+            </div>
+            <div class="delivery-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Estimated: 25–35 minutes
+            </div>
+            <button class="order-cta" id="orderCta">
+              <span>Place Order</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="order-note">Pay on delivery · UPI · Cards accepted</p>
+          </div>
+
+          <div class="freshness-badge">
+            <div class="fresh-icon">🌾</div>
+            <div>
+              <strong>100% Fresh Guarantee</strong>
+              <p>Not happy? Full refund, no questions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label">Real Reviews</div>
+      <h2 class="section-title">50,000+ Families<br /><em>Love Us</em></h2>
+
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Aise rotis ghar mein bhi nahi banate the. Bilkul tawa se utri hui, ghee wali khushbu ke saath. Amazing service!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#D4691E">P</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Arera Colony, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Subscription liya 3 mahine pehle. Ab biwi ko office se aane ke baad khana banana nahi padta. Life saver!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#8B3A0F">R</div>
+              <div>
+                <strong>Rahul Verma</strong>
+                <span>MP Nagar, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Delivery is always on time. Rotis are soft and perfectly made. The ghee finish option is absolutely divine!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#2C5F2E">S</div>
+              <div>
+                <strong>Sunita Patel</strong>
+                <span>Kolar Road, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Perfect for our PG. We split the joint family plan among 8 of us. Gets cheaper and fresher than any dabba service."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#5B2C8D">A</div>
+              <div>
+                <strong>Aman Dubey</strong>
+                <span>Govindpura, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"My elderly parents live alone and this subscription has been a blessing. Fresh, hot, nutritious — every single day."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#C0392B">M</div>
+              <div>
+                <strong>Meera Joshi</strong>
+                <span>Shahpura, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- duplicate for seamless loop -->
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Aise rotis ghar mein bhi nahi banate the. Bilkul tawa se utri hui, ghee wali khushbu ke saath. Amazing service!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#D4691E">P</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Arera Colony, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Subscription liya 3 mahine pehle. Ab biwi ko office se aane ke baad khana banana nahi padta. Life saver!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#8B3A0F">R</div>
+              <div>
+                <strong>Rahul Verma</strong>
+                <span>MP Nagar, Bhopal</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testi-nav">
+        <button class="testi-arrow" id="testiPrev" aria-label="Previous">←</button>
+        <button class="testi-arrow" id="testiNext" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-roti-bg" aria-hidden="true"></div>
+    <div class="container">
+      <h2>First Week Free<br /><em>on Any Subscription</em></h2>
+      <p>Use code <strong>PEHLAROTI</strong> at checkout. Limited time offer.</p>
+      <a href="#subscription" class="btn btn-primary btn-large">
+        <span>Claim Free Week</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="cta-timer">Offer ends in: <span id="ctaCountdown">23:47:12</span></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo logo-light">
+            <span class="logo-icon">🫓</span>
+            <span class="logo-text">Bhopal<em>Roti</em></span>
+          </a>
+          <p>Hand-rolled love, delivered fresh. Making desi khana easy, one roti at a time.</p>
+          <div class="social-links">
+            <a href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Kitchen</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Plans</h4>
+            <ul>
+              <li><a href="#subscription">Starter</a></li>
+              <li><a href="#subscription">Family</a></li>
+              <li><a href="#subscription">Joint Family</a></li>
+              <li><a href="#single-order">Single Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Bhopal Roti Services. Made with ❤️ in Bhopal, MP.</p>
+        <p>FSSAI Lic. 12319013000042 · +91 98765 43210</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ORDER SUCCESS MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-roti">🫓</div>
+      <h3>Order Placed!</h3>
+      <p>Your fresh rotis are being rolled right now. Estimated delivery: <strong>30 minutes</strong>.</p>
+      <p class="modal-tracking">Track on WhatsApp: <a href="#">+91 98765 43210</a></p>
+      <button class="modal-close" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <script src="js/roti-animation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
